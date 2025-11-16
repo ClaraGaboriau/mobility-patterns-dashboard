@@ -77,8 +77,9 @@ venv\Scripts\activate          # (Windows)
 pip install -r requirements.txt
 
 streamlit run app.py
+```
 
-⚠️ Important Notes
+## ⚠️ Important Notes
 No datasets are included in this repository for privacy and confidentiality reasons.
 The dashboard requires access to the anonymized SWICE datasets (all_movements.csv, all_paths.csv) to function correctly.
 Pickle cache files (.pkl) used for performance optimization (e.g., geocoding results and precomputed data) are not provided.
