@@ -65,7 +65,7 @@ mobility-patterns-dashboard/
 
 ## 🚀 How to Run
 
-### 1. Clone the repository
+1. Clone the repository
 ```bash
 git clone https://github.com/ClaraGaboriau/mobility-patterns-dashboard.git
 cd mobility-patterns-dashboard
