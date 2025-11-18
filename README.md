@@ -77,6 +77,7 @@ pip install -r requirements.txt
 
 streamlit run app.py
 ```
+If you encounter any problem, use Python 3.7.3
 
 ## ⚠️ Important Notes
 No datasets are included in this repository for privacy and confidentiality reasons.
