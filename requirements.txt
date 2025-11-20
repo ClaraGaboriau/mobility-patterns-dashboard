@@ -7,8 +7,5 @@ geopy
 geohash
 geolib
 matplotlib
-os
 pydeck
 altair
-Nominatim
-pickle
