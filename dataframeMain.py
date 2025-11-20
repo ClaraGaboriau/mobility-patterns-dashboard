@@ -21,7 +21,7 @@ def generateDataFrame (input_df) :
     st.dataframe(df_grouped,
                  column_order=("Transportation", "Mean distance (km)"),
                  hide_index=True,
-                 width=None,
+                 use_container_width=True,
                  column_config={
                     "Transportation": st.column_config.TextColumn(
                         "Transportation",
