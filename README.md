@@ -65,7 +65,8 @@ mobility-patterns-dashboard/
 
 ## 🚀 How to Run
 
-1) ```bash
+1)
+```bash
 git clone https://github.com/ClaraGaboriau/mobility-patterns-dashboard.git
 cd mobility-patterns-dashboard
 
@@ -77,7 +78,8 @@ pip install -r requirements.txt
 ```
 2) Drag-and-drop data and pkl files in the repository's folder 
 
-3) ```bash
+3)
+```bash
 streamlit run app.py
 ```
 
