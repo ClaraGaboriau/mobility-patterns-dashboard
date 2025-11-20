@@ -65,7 +65,7 @@ mobility-patterns-dashboard/
 
 ## 🚀 How to Run
 
-```bash
+1) ```bash
 git clone https://github.com/ClaraGaboriau/mobility-patterns-dashboard.git
 cd mobility-patterns-dashboard
 
@@ -75,9 +75,9 @@ venv\Scripts\activate          # (Windows)
 
 pip install -r requirements.txt
 ```
-Drop the data and pkl files in the project file. 
+2) Drag-and-drop data and pkl files in the repository's folder 
 
-```bash
+3) ```bash
 streamlit run app.py
 ```
 
