@@ -74,10 +74,14 @@ source venv/bin/activate       # (Linux/Mac)
 venv\Scripts\activate          # (Windows)
 
 pip install -r requirements.txt
+```
+Drop the data and pkl files in the project file. 
 
+```bash
 streamlit run app.py
 ```
-If you encounter any problem, use Python 3.7.3
+
+If you encounter any problem, use Python 3.9
 
 ## ⚠️ Important Notes
 No datasets are included in this repository for privacy and confidentiality reasons.
