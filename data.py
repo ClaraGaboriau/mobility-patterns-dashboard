@@ -7,9 +7,18 @@ import streamlit as st
 
 @st.cache_data
 def load_cleaned_data() -> pd.DataFrame:
-    # Load movememts data
-    df_movement_data = pd.read_csv('data/all_movements.csv', sep=";")  
-
+    try:
+        # Load movements data
+        df_movement_data = pd.read_csv('data/all_movements.csv', sep=";")  
+    except FileNotFoundError:
+        # Display error message to user if no data file found
+        st.error("❗ Data file not found:\n\n"
+            "Please ensure that all csv files are in the data folder"
+            "then reload the app.")
+        st.stop() 
+        # Return an empty DataFrame to prevent further processing
+        return pd.DataFrame()
+        
     # Use the function in citiesNamesFromGeohash
     df = getCitiesNames(df_movement_data)
 
