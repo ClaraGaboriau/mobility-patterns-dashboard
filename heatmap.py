@@ -53,7 +53,17 @@ def set_colormap(cm_name='coolwarm'):
 
 
 def generateHeatmap (input_transport, input_day, input_timeSlot, input_lat, input_long, input_town) :
-    df_paths_data = pd.read_csv('data/all_paths.csv', sep=";")
+    try:
+        # Load movements data
+        df_paths_data = pd.read_csv('data/all_paths.csv', sep=";") 
+    except FileNotFoundError:
+        # Display error message to user if no data file found
+        st.error("❗ Data file not found:\n\n"
+            "Please ensure that all csv files are in the data folder"
+            "then reload the app.")
+        st.stop() 
+        # Return an empty DataFrame to prevent further processing
+        return pd.DataFrame()
     
     # Make input_day in capital letter for after use
     input_day = [d.upper() for d in input_day]
