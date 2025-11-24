@@ -76,7 +76,7 @@ venv\Scripts\activate          # (Windows)
 
 pip install -r requirements.txt
 ```
-2) Drag-and-drop data and pkl files in the repository's folder 
+2) Add the csv files to the empty data folder, and the .pkl files in the repository's folder.
 
 3)
 ```bash
