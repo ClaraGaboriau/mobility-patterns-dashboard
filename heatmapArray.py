@@ -65,8 +65,8 @@ def generateHeatmap(input_df, input_y, input_x, input_color, input_color_theme):
     )
     # Heatmap creation
     heatmap = base.mark_rect().encode(
-        x=alt.X(f'{input_x}:O'),
-        y=alt.Y(f'{input_y}:O', sort=slot_order),
+        x=alt.X(f'{input_x}:O',title='Towns',axis=alt.Axis(titleFontWeight='bold', titleFontSize=16)),
+        y=alt.Y(f'{input_y}:O', sort=slot_order, title='Time slots', axis=alt.Axis(titleFontWeight='bold', titleFontSize=16)),
         color=color_enc,
         stroke=alt.value('black'),
         strokeWidth=alt.value(0.25),
