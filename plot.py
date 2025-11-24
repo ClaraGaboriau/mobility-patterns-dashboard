@@ -157,7 +157,7 @@ def generatePlot(input_df, input_town, input_selection):
         
         # Create Altair chart
         chart = alt.Chart(df_grouped).mark_bar().encode(
-            x=alt.X('distance_km:Q', title='Mean Distance (km)',
+            x=alt.X('distance_km:Q', title='Total Mean Distance (km)',
                     axis=alt.Axis(tickMinStep=1, format='.0f', tickCount=2)),
             y=alt.Y('day_start:N', title='Day of the Week', sort=days_order),
             color=alt.Color('mean_of_transport:N',
