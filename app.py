@@ -155,7 +155,7 @@ with tab2: # Space usage analysis
     #                              Arc layer 
     #============================================================================
     
-    st.subheader("Map of arc layers displaying each journey")
+    st.subheader("Geographic visualization of inter-town mobility and intra-town activity")
     st.markdown(f'''( <img src="{FILTER_ICON}" width="20" style="vertical-align: middle;"> : all filters)
                     ''', unsafe_allow_html=True)
 
