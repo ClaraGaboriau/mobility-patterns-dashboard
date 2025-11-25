@@ -86,6 +86,8 @@ streamlit run app.py
 
 If you encounter any problem, use Python 3.9
 
+---
+
 ## ⚠️ Important Notes
 No datasets are included in this repository for privacy and confidentiality reasons.
 The dashboard requires access to the anonymized SWICE datasets (all_movements.csv, all_paths.csv) to function correctly.
