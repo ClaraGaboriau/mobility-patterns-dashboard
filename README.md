@@ -40,26 +40,27 @@ The project is implemented entirely in **Python** using the following main libra
 
 ## 🧩 Project Structure
 
+```⁠text
 mobility-patterns-dashboard/
 │
-├── data/ # (Not included) Input datasets (.csv) from the SWICE app
-├── cache/ # (Not included) Pickle cache files (.pkl)
+├── data/                      # (Not included) Input datasets (.csv) from the SWICE app
+├── cache/                     # (Not included) Pickle cache files (.pkl)
 │
 ├── scripts/
-│ ├── arcLayer.py # Inter-city mobility visualization
-| ├── dataFrameMain.py # Table for distance visualization
-│ ├── heatmap.py # Intra-town movement intensity visualization
-│ ├── heatmapArray.py # Participant presence heatmap
-│ ├── piechart.py # Transport mode distribution
-│ ├── plot.py # Sankey flow diagram implementation
-│ ├── podium.py # Top 3 transport modes ranking
-| ├── sankey.py # Sankey flow diagram implementation
-│ ├── filterToDF.py # Data filtering utilities
-│ └── citiesNamesFromGeohash.py # Geocoding and town name resolution
+│   ├── arcLayer.py               # Inter-city mobility visualization
+│   ├── dataFrameMain.py          # Table for distance visualization
+│   ├── heatmap.py                # Intra-town movement intensity visualization
+│   ├── heatmapArray.py           # Participant presence heatmap
+│   ├── piechart.py               # Transport mode distribution
+│   ├── plot.py                   # Sankey flow diagram implementation
+│   ├── podium.py                 # Top 3 transport modes ranking
+│   ├── sankey.py                 # Sankey flow diagram implementation
+│   ├── filterToDF.py             # Data filtering utilities
+│   └── citiesNamesFromGeohash.py # Geocoding and town name resolution
 │
-├── app.py # Main Streamlit entry point
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+├── app.py            # Main Streamlit entry point
+├── requirements.txt  # Python dependencies
+└── README.md         # Project documentation
 
 ---
 
