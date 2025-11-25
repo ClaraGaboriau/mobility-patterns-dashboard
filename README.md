@@ -61,7 +61,7 @@ mobility-patterns-dashboard/
 ├── app.py            # Main Streamlit entry point
 ├── requirements.txt  # Python dependencies
 └── README.md         # Project documentation
-
+```
 ---
 
 ## 🚀 How to Run
