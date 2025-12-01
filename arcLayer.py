@@ -149,7 +149,10 @@ def compute_trip_and_town_data(input_df, input_transport, input_day, input_timeS
             town_df_data.append({"town": town, "latitude": coords[0], "longitude": coords[1]})
     town_df = pd.DataFrame(town_df_data)
     if town_df.empty:
-        return None
+        return {
+            "trip_data": trip_data,
+            "town_df": None
+        }
     town_df["tooltip_text"] = town_df["town"].apply(lambda t: f"<b>{t}</b>")
     return {
         "trip_data": trip_data,
